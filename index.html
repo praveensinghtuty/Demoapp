@@ -1,0 +1,38 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="dashboard.css">
+<script src="donutchart_functionality.js"></script>
+<script src="period_selector_multiple_functionality.js"></script>
+<script src="stackedcombinationchart_functionality.js"></script>
+<script src="dashboard.js"></script>
+<script src="ColumnArray.js"></script>
+<script>
+window.onload=function()
+{
+create_period_selector_yqmm("psyqmm");
+outputdeliver_yqmm();
+pass_data('donut','scc');
+}
+</script>
+</head>
+<body>
+<div class="close"><img id="closetop" onclick="doclosetop();" src="images/close1.png"></img></div>
+<div id="header">
+		<div id="left" class="left">
+		</div>
+		<div id="right"class="right">
+		
+		</div>
+		<div id="center" class="center">
+		Demo Dashboard
+		</div>
+		
+</div>
+<div id="bottom">
+<div id="psyqmm" onclick="pass_data('donut','scc');" style="width:300px;height:300px;float:left;"></div>
+<div id="donut"  onclick="passdonut_data('scc');" style="width:300px;height:300px;float:left;"></div>
+<div id="scc" style="width:600px;height:300px;float:left;"></div>
+</div>
+
+</body>
+</html>
